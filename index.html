@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Applied Precision Group</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ======= Inline CSS – keep the file self‑contained ======= -->
+<style>
+/* Global resets */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;background:#f4f4f4;color:#333;}
+a{color:#3498db;text-decoration:none;}
+a:hover{color:#2980b9;}
+h1,h2,h3{margin-bottom:0.5rem;}
+p{margin-bottom:1rem;}
+/* Header & Nav */
+header{background:#2c3e50;color:#fff;padding:1rem 0;}
+nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-size:1.5rem;font-weight:700;}
+.nav-links{list-style:none;display:flex;}
+.nav-links li{margin-left:1.5rem;}
+.nav-links a{font-weight:500;}
+/* Hero section */
+.hero{position:relative;}
+.hero img{width:100%;display:block;}
+.hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:#fff;padding:2rem;background:rgba(0,0,0,0.5);border-radius:8px;}
+.cta-btn{background:#3498db;color:#fff;padding:0.75rem 1.5rem;border-radius:5px;margin-top:1rem;display:inline-block;}
+/* Sections */
+section{padding:4rem 1rem;max-width:1200px;margin:auto;background:#fff;}
+section h2{font-size:2rem;text-align:center;margin-bottom:2rem;}
+/* About */
+.about-content{display:flex;flex-wrap:wrap;align-items:center;gap:2rem;}
+.about-content img{max-width:100%;width:400px;border-radius:8px;}
+.about-content p{flex:1;}
+/* Services */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+.service-item{text-align:center;background:#ecf0f1;padding:1rem;border-radius:8px;}
+.service-item img{max-width:100%;height:auto;border-radius:8px;margin-bottom:0.5rem;}
+/* Contact form */
+form{display:grid;grid-gap:1rem;max-width:600px;margin:auto;}
+label{font-weight:600;}
+input,textarea{width:100%;padding:0.75rem;border:1px solid #ccc;border-radius:5px;}
+button{background:#3498db;color:#fff;border:none;padding:0.75rem 1.5rem;border-radius:5px;cursor:pointer;font-size:1rem;}
+button:hover{background:#2980b9;}
+/* Footer */
+footer{background:#2c3e50;color:#fff;text-align:center;padding:1rem 0;}
+/* Responsive tweaks */
+@media(max-width:768px){
+  .about-content{flex-direction:column;}
+  .hero-text{padding:1rem;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Applied Precision Group</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <img src="https://via.placeholder.com/1200x400?text=Hero+Image" alt="Precision Engineering">
+    <div class="hero-text">
+      <h1>Precision Engineering for Tomorrow</h1>
+      <p>Your trusted partner in high‑precision solutions.</p>
+      <a href="#services" class="cta-btn">Our Services</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <img src="https://via.placeholder.com/400x300?text=About+Image" alt="About Applied Precision Group">
+      <p>
+        Applied Precision Group is a leading provider of custom machining, quality assurance, and rapid prototyping services.
+        With a focus on accuracy, efficiency, and innovation, we deliver solutions that meet the highest standards of performance
+        and reliability across a wide range of industries.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <img src="https://via.placeholder.com/300x200?text=Custom+Machining" alt="Custom Machining">
+        <h3>Custom Machining</h3>
+        <p>Precision machining solutions for complex geometries and high‑quality finishes.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://via.placeholder.com/300x200?text=Quality+Assurance" alt="Quality Assurance">
+        <h3>Quality Assurance</h3>
+        <p>Comprehensive QA/QC processes to ensure product performance and reliability.</p>
+      </div>
+      <div class="service-item">
+        <img src="https://via.placeholder.com/300x200?text=Rapid+Prototyping" alt="Rapid Prototyping">
+        <h3>Rapid Prototyping</h3>
+        <p>Fast turnaround prototyping using additive and subtractive manufacturing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Applied Precision Group. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
