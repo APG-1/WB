@@ -253,6 +253,7 @@ footer p { margin:0; }
 <main id="main-content">
   <!-- Hero -->
   <section id="home" class="hero">
+    <!-- Added ?raw=true to GitHub links to render images correctly -->
     <img src="https://github.com/APG-1/WB/blob/main/LTwMagbase.jpg?raw=true"
          alt="Precision Engineering">
     <div class="hero-text">
@@ -266,6 +267,7 @@ footer p { margin:0; }
   <section id="about">
     <h2>About Us</h2>
     <div class="about-content">
+      <!-- Added ?raw=true to GitHub links -->
       <img src="https://github.com/APG-1/WB/blob/main/APG%20Logo.png?raw=true"
            alt="About Applied Precision Group">
       <p>
@@ -283,6 +285,7 @@ footer p { margin:0; }
     <h2>Our Services</h2>
     <div class="services-grid">
       <div class="service-item">
+        <!-- Added ?raw=true to GitHub links -->
         <img src="https://github.com/APG-1/WB/blob/main/LT.jpg?raw=true"
              alt="Laser Tracker Inspection">
         <h3>Laser Tracker Inspection</h3>
@@ -290,12 +293,14 @@ footer p { margin:0; }
            large scale assemblies.</p>
       </div>
       <div class="service-item">
+        <!-- Added ?raw=true to GitHub links -->
         <img src="https://github.com/APG-1/WB/blob/main/LT-Hex.jpg?raw=true"
              alt="Repeatability">
         <h3>Repeatability Studies</h3>
         <p>Comprehensive processes to ensure tooling precision and repeatability.</p>
       </div>
       <div class="service-item">
+        <!-- Added ?raw=true to GitHub links -->
         <img src="https://github.com/APG-1/WB/blob/main/Assem-Line.jpg?raw=true"
              alt="Machine Tool Installations">
         <h3>Machine Tool Installation</h3>
@@ -307,7 +312,17 @@ footer p { margin:0; }
   <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <form action="#" method="post" novalidate>
+    <!-- 
+      Formsubmit.co handles the POST request and emails gregm@appliedprecisiongroup.com.
+      First submission will send you a confirmation email to verify your email.
+    -->
+    <form action="https://formsubmit.co/gregm@appliedprecisiongroup.com" 
+          method="POST" 
+          novalidate>
+      <!-- Added hidden input for form submit confirmation -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Message from Website">
+
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required
              autocomplete="name" placeholder="Your name">
